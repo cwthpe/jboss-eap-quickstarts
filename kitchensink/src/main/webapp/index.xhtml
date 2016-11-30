@@ -21,17 +21,15 @@
     xmlns:h="http://java.sun.com/jsf/html"
     template="/WEB-INF/templates/default.xhtml">
     <ui:define name="content">
-        <h1>Welcome to JBoss!</h1>
+        <h1>Sign Up!</h1>
 
         <div>
-            <p>You have successfully deployed a Java EE Enterprise
-                Application.</p>
+            <p>Tournament details will be sent to your provided email address.</p>
         </div>
 
         <h:form id="reg">
-            <h2>Member Registration</h2>
-            <p>Enforces annotation-based constraints defined on the
-                model class.</p>
+            <h2>Player Registration</h2>
+            <p>Please fill out as accurately as possible.</p>
             <h:panelGrid columns="3" columnClasses="titleCell">
                 <h:outputLabel for="name" value="Name:" />
                 <h:inputText id="name" value="#{newMember.name}" />
@@ -58,7 +56,7 @@
                 </h:panelGrid>
             </p>
         </h:form>
-        <h2>Members</h2>
+        <h2>Players</h2>
         <h:panelGroup rendered="#{empty members}">
             <em>No registered members.</em>
         </h:panelGroup>
